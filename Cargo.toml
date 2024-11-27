@@ -1,11 +1,18 @@
 [package]
 name = "fanqie_dev_tool"
-version = "0.1.0"
+version = "0.1.2"
 edition = "2018"
 description = "A useful development tool for various tasks，Refer to https://github.com/maochunguang/my_dev_tool repository, thanks to the original author"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
 clap = "4.4.0"
-chrono = "0.4"
 urlencoding = "2.1"
+
+[[bin]]
+name = "fanqie_dev_tool"
+path = "src/main.rs"
+
+[[bin]]
+name = "fq"
+path = "src/main.rs"
